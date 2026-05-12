@@ -1,0 +1,27 @@
+body {
+background-color: #c1c5ca;
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+
+h1, h2, p {
+font-family: Verdana, sans-serif;
+}
+
+.section {
+background-color: rgb(162, 161, 161);
+padding: 20px;
+margin-top: 20px;
+border-radius: 10px;
+}
+
+#header {
+text-align: center;
+background-color: rgb(113, 107, 107);
+padding: 20px;
+border-radius: 10px;
+}
+
+section ul li {
+color: rgb(112, 11, 4);
+}
