@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 4: Layout Control in CSS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-header">
+<h1>Lab 4: CSS Layout Control</h1>
+</header>
+
+<nav class="sticky-nav">
+<a href="#box-model-section">Part 1: Box Model</a> |
+<a href="#floats-section">Part 3: Float & Clear</a>
+</nav>
+
+<div class="page-wrapper">
+
+<section id="box-model-section" class="box-model-container">
+<h2>Part 1: Box Model (Control of Space)</h2>
+
+<div class="stacked-box box-1">
+<h3>Box One</h3>
+<p>Demonstrating content, padding inside the border, and margin separating it from Box Two.</p>
+</div>
+
+<div class="stacked-box box-2">
+<h3>Box Two</h3>
+<p>Increasing the margin on this box pushes the adjacent boxes further away externally.</p>
+</div>
+
+<div class="stacked-box box-3">
+<h3>Box Three</h3>
+<p>The border cleanly wraps both the content and the internal padding of this container.</p>
+</div>
+</section>
+
+<section id="floats-section" class="columns-container">
+<h2>Parts 2 & 3: Positioning & Floats</h2>
+
+<main class="main-content">
+<span class="absolute-label">NEW</span>
+<h3>Main Content Area</h3>
+</main>
+
+<aside class="sidebar">
+<h3>Sidebar</h3>
+<p>This sidebar is floated to the right. Text and layout components naturally sit side-by-side with the main content due to the left and right float alignments.</p>
+</aside>
+
+</section>
+
+<footer class="main-footer">
+<p>&copy; 2026 - Lab 4 Layout Assignment completed without Flexbox or Grid.</p>
+</footer>
+
+</div>
+
+</body>
+</html>

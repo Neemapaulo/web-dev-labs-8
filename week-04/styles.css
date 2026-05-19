@@ -1,0 +1,138 @@
+/* Reset basic styles for predictable layout calculation */
+* {
+margin: 0;
+padding: 0;
+box-sizing: content-box; /* Ensures explicit practice of standard box model rules */
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f9;
+color: #333;
+}
+
+/* Page wrapper to push down content so it doesn't hide behind fixed header */
+.page-wrapper {
+padding-top: 70px;
+width: 90%;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+
+
+/* Fixed Header: Remains locked at the top of the viewport during scroll */
+.main-header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 45px;
+background-color: #2c3e50;
+color: #fff;
+text-align: center;
+padding-top: 10px;
+z-index: 1000;
+}
+
+/* Sticky Nav: Scrolls normally until it hits the top, then sticks */
+.sticky-nav {
+position: -webkit-sticky; /* Safari support */
+position: sticky;
+top: 55px; /* Sits right under the 55px fixed header */
+background-color: #34495e;
+padding: 10px;
+text-align: center;
+z-index: 999;
+}
+
+.sticky-nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+font-weight: bold;
+}
+
+
+.box-model-container {
+margin-top: 30px;
+padding: 15px;
+background-color: #fff;
+border: 1px dashed #ccc;
+}
+
+.box-model-container h2 {
+margin-bottom: 15px;
+}
+
+/* Stacked Div Elements demonstrating Box Model */
+.stacked-box {
+/* Content height and width managed */
+background-color: #ffcccc; /* Light pink background to highlight structural space */
+
+/* Border wraps content and padding */
+border: 3px solid #c0392b;
+
+/* Padding: Internal spacing inside the border */
+padding: 20px;
+
+/* Margin: External spacing pushing boxes away from each other */
+margin: 25px 0px;
+}
+
+
+.columns-container {
+margin-top: 30px;
+background-color: #fff;
+padding: 15px;
+border: 1px dashed #ccc;
+}
+
+.columns-container h2 {
+margin-bottom: 15px;
+}
+
+/* Container set to relative positioning to anchor the absolute child label */
+.main-content {
+position: relative;
+float: left;
+width: 60%;
+background-color: #e8f4f8;
+border: 2px solid #2980b9;
+padding: 25px;
+}
+
+/* Absolute element: positioned relative to nearest positioned parent (.main-content) */
+.absolute-label {
+position: absolute;
+top: 0;
+right: 0;
+background-color: #e74c3c;
+color: white;
+font-size: 12px;
+font-weight: bold;
+padding: 4px 8px;
+border-bottom-left-radius: 4px;
+}
+
+/* Sidebar floated right */
+.sidebar {
+float: right;
+width: 28%;
+background-color: #fcf3cf;
+border: 2px solid #f1c40f;
+padding: 25px;
+}
+
+ the floated columns */
+.main-footer {
+clear: both;
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
